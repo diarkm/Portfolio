@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import MobileMenu from './components/mobileMenu';
+import Header from './components/header';
+import Slider from './components/slider';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<>
+			<MobileMenu />
+
+			<div className="unslate_co--site-wrap">
+				<div className="unslate_co--site-inner">
+					<div className="lines-wrap">
+						<div className="lines-inner">
+							<div className="lines"></div>
+						</div>
+					</div>
+				</div>
+
+				<Header />
+
+				<Slider />
+			</div>
+		</>
+	);
+};
 
 export default App;
